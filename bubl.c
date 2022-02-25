@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-int n;
+int a[10],n;
+void buble_sort();
 void buble_sort(int a[])
 {
 int i,j,temp;
@@ -25,7 +26,7 @@ scanf("%d",&n);
 printf("enter the element:");
 for(i=0;i<n;i++)
 scanf("%d",&a[i]);
-buble_sort(a);
+buble_sort();
 printf("sorted data is:\n");
 for(i=0;i<n;i++)
 printf(" %d",a[i]);
