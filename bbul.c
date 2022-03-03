@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-int a[10],i,temp,j,n;
+int a[20],i,temp,j,n;
 printf("enter the number of elements:");
 scanf("%d",&n);
 printf("enter the elements:");
