@@ -46,7 +46,7 @@ case '/':if(op2!=0)
            printf("out loop");
             return 0;
                  }
-case '^': push(op1^op2);
+case '^': push(pow(op1,op2));
            break;
 }
 }}
