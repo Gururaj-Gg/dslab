@@ -1,24 +1,25 @@
 #include<stdio.h>
 #include<ctype.h>
 #include<stdlib.h>
-char stack[30],postfix[30];
+int stack[30];
+char postfix[30];
 int top=-1;
-void push(char);
-char pop();
+void push(int);
+int pop();
 int evalpost();
-void push(char symbol)
+void push(int symbol)
 {
 stack[++top]=symbol;
 }
-char pop()
+int pop()
 {
-char symbol;
+int symbol;
 symbol=stack[top--];
 return symbol;
 }
 int evalpost()
 {
-char symbol;
+int symbol;
 int i=0,op1,op2;
 while((symbol=postfix[i++])!='\0')
 {
