@@ -26,7 +26,7 @@ if(front==-1)
 printf("q is empty");
 exit(0);
 }
-ele=q[front++];
+ele=q[front];
 if(front==rear)
 front=rear=-1;
 else
