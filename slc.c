@@ -9,13 +9,13 @@ void main()
     printf("\nEnter elements of an array:\n");
     for(i=0; i<n; i++)
         scanf("%d", &a[i]);
-    selection_sort();
+    selection_sort(a);
     printf("\n\nAfter sorting:\n");
     for(i=0; i<n; i++)
         printf("\n%d", a[i]);
     
 }
-void selection_sort()
+void selection_sort(int a[])
 {
     int i, j, min, temp;
     for (i=0; i<n; i++)
